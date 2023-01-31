@@ -1,0 +1,149 @@
+body {
+  text-align: center;
+  justify-content: center;
+  box-sizing: border-box;
+  background-color: #f1e0e2;
+}
+.img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+  object-fit: cover;
+}
+.section {
+  padding: 1rem 0;
+  width: 80vw;
+  max-width: 1000px;
+  margin: 0 auto;
+  font-size: 30px;
+}
+@media screen and (min-width: 776px) {
+  .section {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (min-width: 992px) {
+  .section {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+.singlemeal {
+  background: whitesmoke;
+  color: black;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease-in-out all;
+  margin: 10px;
+}
+.likebtn {
+  background: transparent;
+  border: transparent;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: 0.3s ease-in-out all;
+  margin-bottom: 10px;
+}
+.likebtn:hover {
+  font-size: 1.7rem;
+}
+.search-container {
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form-input {
+  max-width: 200px;
+  padding: 0.5rem 0.75rem;
+  border-radius: 5px;
+  background: whitesmoke;
+  border: 2px solid grey;
+}
+.btn {
+  background: whitesmoke;
+  border: 2px solid grey;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: 0.3s ease-in-out all;
+}
+.search-container form {
+  width: 100vw;
+  max-width: 1000px;
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-left: 1rem;
+}
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  display: grid;
+  place-items: center;
+  z-index: 100;
+}
+.modal-container {
+  width: 80vw;
+  max-width: 800px;
+  height: 80vh;
+  overflow: scroll;
+  background: whitesmoke;
+  border-radius: 10px;
+}
+.modal-img {
+  height: 18rem;
+}
+.modal-content {
+  padding: 1rem;
+}
+.modal-content h4 {
+  font-size: 2rem;
+}
+.modal-content p {
+  color: rgb(59, 55, 55);
+  font-size: 16px;
+}
+.modal-content a {
+  display: block;
+  color: rgb(63, 63, 241);
+  margin-bottom: 1rem;
+  text-decoration: underline;
+}
+.close-btn {
+  background: rgb(238, 204, 210);
+}
+.close-btn:hover {
+  background: rgb(235, 226, 228);
+}
+.favorites {
+  background: pink;
+  padding: 1rem 0;
+  border-radius: 10px;
+}
+.favorites-content {
+  width: 80vw;
+  max-width: 1000px;
+  margin: 0 auto;
+  font-size: 30px;
+  text-align: center;
+}
+.favorites-container {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+.favorites-img {
+  width: 150px;
+  border-radius: 10%;
+  cursor: pointer;
+}
+.remove-btn {
+  background: rgb(245, 112, 134);
+}
+.remove-btn:hover {
+  background: rgb(240, 165, 177);
+}
